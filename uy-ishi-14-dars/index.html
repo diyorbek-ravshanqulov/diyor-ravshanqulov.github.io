@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web site</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			/* havola tagidagi chiziqni yo'q qiladi	*/
+			text-decoration: none;
+			/* ro'yxat  nuqtasini yo'q qilish */
+			list-style: none;
+		}
+
+		nav {
+			position: fixed;
+			top: 0;
+
+			padding: 0 30px;
+			height: 80px;
+			width: 100%;
+			background-color: #e4e4e4;
+		}
+
+		nav ul {
+			display: flex;
+			gap: 20px;
+			align-items: center;
+			justify-content: right;
+			height: 100%;
+		}
+
+		nav a {
+			border: 1px solid grey;
+			padding: 20px;
+			color: white;
+			/* transition */
+			transition: all 0.5s;
+		}
+
+		nav a:hover {
+			color: grey;
+			background-color: white;
+		}
+
+		.height {
+			width: 100%;
+			height: 100vh;
+		}
+
+		.blue {
+			background-color: dodgerblue;
+		}
+		.green {
+			background-color: limegreen;
+		}
+		.red {
+			background-color: orange;
+		}
+		.yellow {
+			background-color: yellow;
+		}
+
+		button {
+			font-size: 1.5em;
+			color: grey;
+			border: 0.5px solid grey;
+			transform: rotate(-90deg);
+			width: 50px;
+			height: 50px;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			border-radius: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<header class="height">
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">New</a>
+				</li>
+				<li>
+					<a href="#">About us</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<button onclick="onBtn()">></button>
+
+	<section class="height blue"></section>
+	<section class="height red"></section>
+	<section class="height yellow"></section>
+	<section class="height green"></section>
+
+	<script>
+		function onBtn() {
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+</body>
+</html>
