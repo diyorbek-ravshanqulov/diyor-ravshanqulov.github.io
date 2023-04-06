@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home task</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			overflow: hidden;
+
+		}
+		body {
+			background-color: #f5f5f5;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			height: 100vh;
+		}
+		.con {
+			width: 300px;
+			height: 430px;
+			border: 1px solid black;
+			border-radius: 10px;
+			overflow: hidden;
+			padding: 5px;
+		}
+
+		.img_con {
+			width: 100%;
+			height: 200px;
+			overflow: hidden;
+			border-radius: 10px;
+		}
+
+		img {
+			width: 100%;
+			height: 200px;
+			transition: all 2s;
+			overflow: hidden;
+		}
+
+		h1 {
+			text-align: center;
+			font-weight: bold;
+			transition: all 0.2s;
+		}
+
+		p {
+			margin: 10px auto;
+			text-align: justify;
+			text-align-last: center;
+			text-indent: 30px;
+			transition: all 0.2s;
+			font-size: 0.9em;
+		}
+		.img_con:hover {
+			outline: 2px solid yellow;
+		}
+
+		img:hover  {
+			transform: scale(1.2);
+			overflow: hidden;
+		}
+
+		.box:hover div{
+			transition: all 0.3s;
+			color: white;
+			background-color: dodgerblue;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box">
+	<div class="con">
+		<div class="img_con">
+			<img src="https://static7.depositphotos.com/1297553/795/i/950/depositphotos_7951909-stock-photo-team-of-lifting-it-information.jpg">
+		</div>
+		<h1>Topshiriq</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	</div>
+
+</body> 
+</html>
