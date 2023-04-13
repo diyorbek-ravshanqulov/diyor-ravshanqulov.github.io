@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #353535;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+div {
+	text-align: center;
+	padding: 14px 9px;
+	width: 70px;
+	height: 70px;
+	border: 3px solid white;
+	margin: 10px;
+	border-radius: 100%;
+}
+
+div .fa-vk {
+	margin-top: 3px;
+	margin-left: -5px;
+}
+
+div .fa-instagram {
+	margin-top: -1.5px;
+	margin-left: 1.5px;
+}
+
+.fab {
+	text-align: center;
+	font-size: 2.3em;
+	color: white;	
+	background-color: transparent;
+	border-radius: 100%;
+	border: none;
+	border: 1px solid;
+	width: 1em;
+	height: 1em;
+}
+
+.fa-facebook-f {
+	border: none;
+}
+
+.fa-google {
+	color: white;
+	border: none;
+	background-color: transparent;
+}
+.fa-instagram {
+	padding: 3px;
+	height: 1.1em;
+	width: 1.1em;
+	border: none;
+	color: white;
+	background-color: transparent;
+	text-align: center;
+}
+
+.fa-twitter {
+	width: 1.4em;
+	height: 1.1em;
+	padding: 3px;
+	border: none;
+	color: white;
+	background-color: transparent;
+	text-align: center;
+}
+
+.fa-vk {
+	border: none;
+	color: white;
+	background-color: transparent;
+	text-align: center;
+}
+
+
+.fa-telegram {
+	border: none;
+	text-align: center;
+	border: none;
+}
+
+div:hover {
+	box-shadow: 0 0 10px blue;
+	border-color: blue;
+}
+div:hover .fa-facebook-f{
+	color: blue;
+}
+
+div:nth-child(2):hover {
+	box-shadow: 0 0 10px yellow;
+	border-color: yellow;
+}
+div:hover .fa-vk{
+	color: yellow;
+}
+
+div:nth-child(3):hover {
+	box-shadow: 0 0 10px green;
+	border-color: green;
+}
+div:hover .fa-twitter{
+	color: green;
+}
+
+div:nth-child(4):hover {
+	box-shadow: 0 0 10px red;
+	border-color: red;
+}
+div:hover .fa-instagram {
+	color: red;
+}
+
+div:nth-child(5):hover {
+	box-shadow: 0 0 10px orange;
+	border-color: orange;
+}
+div:hover .fa-google{
+	color: orange;
+}
+
+div:nth-child(6):hover {
+	box-shadow: 0 0 10px skyblue;
+	border-color: skyblue;
+}
+div:hover .fa-telegram{
+	color: skyblue;
+}
