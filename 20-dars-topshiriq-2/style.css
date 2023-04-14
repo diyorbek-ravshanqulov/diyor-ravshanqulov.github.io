@@ -13,6 +13,7 @@ body {
 }
 
 div {
+	transition: all 0.3s;
 	text-align: center;
 	padding: 14px 9px;
 	width: 70px;
@@ -41,6 +42,7 @@ div .fa-instagram {
 	border: none;
 	border: 1px solid;
 	width: 1em;
+	transition: all 0.3s;
 	height: 1em;
 }
 
@@ -98,6 +100,7 @@ div:hover .fa-facebook-f{
 div:nth-child(2):hover {
 	box-shadow: 0 0 10px yellow;
 	border-color: yellow;
+	cursor: pointer;
 }
 div:hover .fa-vk{
 	color: yellow;
@@ -106,6 +109,7 @@ div:hover .fa-vk{
 div:nth-child(3):hover {
 	box-shadow: 0 0 10px green;
 	border-color: green;
+	cursor: pointer;
 }
 div:hover .fa-twitter{
 	color: green;
@@ -114,6 +118,7 @@ div:hover .fa-twitter{
 div:nth-child(4):hover {
 	box-shadow: 0 0 10px red;
 	border-color: red;
+	cursor: pointer;
 }
 div:hover .fa-instagram {
 	color: red;
@@ -122,6 +127,7 @@ div:hover .fa-instagram {
 div:nth-child(5):hover {
 	box-shadow: 0 0 10px orange;
 	border-color: orange;
+	cursor: pointer;
 }
 div:hover .fa-google{
 	color: orange;
@@ -130,6 +136,7 @@ div:hover .fa-google{
 div:nth-child(6):hover {
 	box-shadow: 0 0 10px skyblue;
 	border-color: skyblue;
+	cursor: pointer;
 }
 div:hover .fa-telegram{
 	color: skyblue;
