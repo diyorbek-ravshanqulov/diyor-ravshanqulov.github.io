@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 10px;
+}
+
+div.box {
+	width: 100%;
+	height: calc(100vh - 10px * 2);
+	outline: 1px solid #000;
+}
+
+.animatsiya {
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+	position: relative;
+	animation-name: animation_name;
+	border-radius: 50%;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	animation-direction: normal;	/* normal-o'rtacha  */
+	animation-timing-function: linear; /* in-oxirida out-boshlanishida in-out-boshida va oxirida tezlashadi linear-bir xil holat */
+	animation-fill-mode: both;
+/*	animation: animation_name 3s linear infinite;*/
+}
+
+
+@keyframes animation_name {
+	0% {
+		top: 0;
+		left: 0;
+		filter: hue-rotate(0deg);
+		border-radius: 0;
+	}
+	12.5% {
+		border-radius: 50%;
+	}
+	25% {
+		left: calc(100% - 50px);
+		top: calc(100% - 50px);
+		border-radius: 0px;
+	}
+	37.5% {
+		border-radius: 50%;
+	}
+	50% {
+		top: 0;
+		left: calc(100% - 50px);
+		border-radius: 0px;
+	}
+	62.5% {
+		border-radius: 50%;
+	}
+	75% {
+		left: 0;
+		top: calc(100% - 50px);
+		border-radius: 0px;
+	}
+	87.5% {
+		border-radius: 50%;
+	}
+	100% {
+		border-radius: 0px;
+		left: 0;
+		top: 0;
+		filter: hue-rotate(360deg);
+	}
+}
+
+/*
+	
+	infinite: cheksizlik
+
+	Animatsiya uchun ishlatiladigan qiymatlar
+
+	@keyframes animatsiya_nomi {
+		animatsiyaga uslub berish
+	}
+	selector {
+		animation-name: animatsiya_nomi;
+		animation-duration: animatsiya_vaqti;
+		animation-iteration-count: animatsiya necha marta takrorlanishi;
+		animation-delay: animatsiya boshlanishini kutish;
+		animation-direction: animatsiyani yo'nalishini o'zgartirish;
+		animation-timing-function: animatsiya tezligi;
+		animation-fill-mode: animatsiya qiymatini saqlab qolish;
+		animation: animatsiya stenografiyasi xususiyatlari;
+	}
+*/
