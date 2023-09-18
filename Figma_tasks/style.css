@@ -1,0 +1,124 @@
+:root {
+    --fon_1: #fff;
+    --rang_1: #252eff;
+    --chegara_rang: #6066ff;
+    --placeholder: rgba(0, 0, 0, 0.7);
+    --font_1: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+body {
+    background-color: grey;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light {
+    width: 400px;
+    height: 400px;
+    background-color: var(--fon_1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.light .title {
+    margin: 36px auto 53px;
+    text-align: center;
+    font-family: var(--font_1);
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--rang_1);
+}
+
+.light input {
+    width: 352px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: var(--font_1);
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    margin-bottom: 18px;
+    border: 1px solid var(--chegara_rang);
+    color: var(--placeholder);
+}
+
+.light input[type="submit"] {
+    margin-top: 56px;
+    height: 38px;
+    width: 153px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--rang_1);
+    color: var(--fon_1);
+    border: none;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: var(--rang_1);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.dark {
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.dark .title {
+    margin: 36px auto 53px;
+    text-align: center;
+    font-family: var(--font_1);
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--fon_1);
+}
+
+.dark input {
+    width: 352px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: var(--font_1);
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    margin-bottom: 18px;
+    border: 1px solid;
+    color: var(--placeholder);
+    border-color: #bb86fc;
+    background-color: transparent;
+}
+
+.dark input[type="submit"] {
+    margin-top: 56px;
+    height: 38px;
+    width: 153px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #bb86fc;
+    color: #000;
+    border: none;
+}
